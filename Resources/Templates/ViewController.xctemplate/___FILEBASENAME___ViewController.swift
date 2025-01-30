@@ -9,9 +9,8 @@ final class ___FILEBASENAME___ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        presenter = ___FILEBASENAME___Presenter(view: self,
-                                                service: ___FILEBASENAME___Service())
+        
+        presenter = ___FILEBASENAME___Presenter(view: self, service: ___FILEBASENAME___Service())
         
         setupView()
         setupLayout()
@@ -27,12 +26,10 @@ private extension ___FILEBASENAME___ViewController {
         
     }
     
-    
     /// AutoLayoutやレイアウトの初期設定
     func setupLayout() {
         
     }
-    
     
     /// ボタンイベントなどの設定
     func actionBind() {

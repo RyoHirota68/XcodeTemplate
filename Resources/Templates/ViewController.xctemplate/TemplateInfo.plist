@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>SupportsSwiftPackage</key>
-    <true/>
     <key>Kind</key>
     <string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
     <key>Description</key>
@@ -11,23 +9,34 @@
     <key>Summary</key>
     <string>An empty Swift file</string>
     <key>SortOrder</key>
-    <string>1</string>
-    <key>Image</key>
-    <dict>
-        <key>FileTypeIcon</key>
-        <string>swift</string>
-    </dict>
+    <string>30</string>
     <key>AllowedTypes</key>
     <array>
         <string>public.swift-source</string>
     </array>
-    <key>Platforms</key>
-    <array />
     <key>DefaultCompletionName</key>
     <string>File</string>
     <key>MainTemplateFile</key>
-    <string>___FILEBASENAME___ViewController.swift</string>
-    <key>FileName</key>
-    <string>___VARIABLE_moduleName___ViewController.swift</string>
+    <string>___FILEBASENAME___.swift</string>
+    <!-- 追加ここから -->
+    <key>Options</key>
+    <array>
+        <dict>
+            <key>Identifier</key>
+            <string>NAME</string>
+            <key>Required</key>
+            <true/>
+            <key>Name</key>
+            <string>名称を入力してください。 Name:</string>
+            <key>Description</key>
+            <string>「Hoge」と入力するとHogeViewController,HogePresenter,HogeServiceが生成されます。</string>
+            <key>Type</key>
+            <string>text</string>
+            <key>Default</key>
+            <string>Hoge</string>
+        </dict>
+    </array>
+    <!-- 追加ここまで -->
 </dict>
 </plist>
+
