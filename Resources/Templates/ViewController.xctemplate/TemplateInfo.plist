@@ -27,5 +27,7 @@
     <string>File</string>
     <key>MainTemplateFile</key>
     <string>___FILEBASENAME___ViewController.swift</string>
+    <key>FileName</key>
+    <string>___VARIABLE_moduleName___ViewController.swift</string>
 </dict>
 </plist>
