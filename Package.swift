@@ -5,18 +5,5 @@ import PackageDescription
 
 let package = Package(
     name: "XcodeTemplates",
-    platforms: [.iOS(.v15)],
-    products: [
-        .plugin(name: "InstallXcodeTemplates", targets: ["InstallXcodeTemplates"])
-    ],
-    targets: [
-        .plugin(
-            name: "InstallXcodeTemplates",
-            capability: .command(
-                intent: .custom(verb: "install-xcode-templates", description: "Installs Xcode templates"),
-                permissions: [.writeToPackageDirectory(reason: "Install Xcode templates")]
-            ),
-            path: "Plugins/InstallXcodeTemplates"
-        )
-    ]
+    platforms: [.iOS(.v15)]
 )
