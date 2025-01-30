@@ -12,7 +12,7 @@ protocol ___FILEBASENAME___ViewOutput: AnyObject {
 // View -> Presenter
 protocol ___FILEBASENAME___ViewInput {
     // ViewからPresenterの呼び出す関数
-    // func fetch()
+     func fetch()
 }
 
 final class ___FILEBASENAME___Presenter {

@@ -20,7 +20,7 @@ final class ___FILEBASENAME___ViewController: UIViewController {
 }
 
 // MARK: - Setup
-extension ___FILEBASENAME___ViewController {
+private extension ___FILEBASENAME___ViewController {
     
     /// viewの初期設定
     func setupView() {
@@ -52,7 +52,7 @@ extension TemplateViewController: ___FILEBASENAME___ViewOutput {
                 showErrorDialog(message: error.message)
                 return
             } else {
-                showErrorDialog(message: String(localized: <#適切ローカライズされたエラーメッセージ#>))
+                showErrorDialog(message: String(localized: <#ローカライズされたエラーメッセージ#>))
                 return
             }
         }
@@ -67,5 +67,10 @@ extension TemplateViewController: ___FILEBASENAME___ViewOutput {
 
 // MARK: - Private
 private extension ___FILEBASENAME___ViewController {
+    
+    func buttonAction() {
+        showProgress()
+        presenter.fetch()
+    }
     
 }
