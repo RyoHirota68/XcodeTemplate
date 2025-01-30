@@ -18,25 +18,6 @@
     <string>File</string>
     <key>MainTemplateFile</key>
     <string>___FILEBASENAME___.swift</string>
-    <!-- 追加ここから -->
-    <key>Options</key>
-    <array>
-        <dict>
-            <key>Identifier</key>
-            <string>NAME</string>
-            <key>Required</key>
-            <true/>
-            <key>Name</key>
-            <string>名称を入力してください。 Name:</string>
-            <key>Description</key>
-            <string>「Hoge」と入力するとHogeViewController,HogePresenter,HogeServiceが生成されます。</string>
-            <key>Type</key>
-            <string>text</string>
-            <key>Default</key>
-            <string>Hoge</string>
-        </dict>
-    </array>
-    <!-- 追加ここまで -->
 </dict>
 </plist>
 

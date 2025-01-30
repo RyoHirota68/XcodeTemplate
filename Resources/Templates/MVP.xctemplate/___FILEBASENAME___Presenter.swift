@@ -3,12 +3,12 @@
 import Foundation
 
 // Presenter -> service
-protocol ___VARIABLE_NAME___ServiceInput {
+protocol ___FILEBASENAME___ServiceInput {
     // PresenterからServiceの呼び出す関数
     func fetch() async throws -> [String]
 }
 
-class ___VARIABLE_NAME___Service: ___VARIABLE_NAME___ServiceInput {
+class ___FILEBASENAME___Service: ___FILEBASENAME___erviceInput {
     // リポジトリの初期化はDI
     let repository: <#Repository#>
     

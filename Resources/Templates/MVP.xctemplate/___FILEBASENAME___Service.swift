@@ -3,24 +3,24 @@
 import Foundation
 
 // Presenter -> View
-protocol ___VARIABLE_NAME___ViewOutput: AnyObject {
+protocol ___FILEBASENAME___ViewOutput: AnyObject {
     // PresenterからViewの呼び出す関数
     func showApiError(error: Error)
     func updateData(data: [String])
 }
 
 // View -> Presenter
-protocol ___VARIABLE_NAME___ViewInput {
+protocol ___FILEBASENAME___ViewInput {
     // ViewからPresenterの呼び出す関数
      func fetch()
 }
 
-final class ___VARIABLE_NAME___Presenter {
+final class ___FILEBASENAME___Presenter {
     
-    weak var view: ___VARIABLE_NAME___ViewOutput?
-    private let service: ___VARIABLE_NAME___ServiceInput
+    weak var view: ___FILEBASENAME___ViewOutput?
+    private let service: ___FILEBASENAME___ServiceInput
     
-    init(view: ___VARIABLE_NAME___ViewOutput, service: ___VARIABLE_NAME___ServiceInput) {
+    init(view: ___FILEBASENAME___ViewOutput, service: ___FILEBASENAME___ServiceInput) {
         self.view = view
         self.service = service
     }

@@ -3,14 +3,14 @@
 import UIKit
 import SVProgressHUD
 
-final class ___VARIABLE_NAME___ViewController: UIViewController {
+final class ___FILEBASENAME___ViewController: UIViewController {
     
-    private let presenter: ___VARIABLE_NAME___Presenter!
+    private let presenter: ___FILEBASENAME___Presenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        presenter = ___VARIABLE_NAME___Presenter(view: self, service: ___VARIABLE_NAME___Service())
+        presenter = ___FILEBASENAME___Presenter(view: self, service: ___FILEBASENAME___Service())
         
         setupView()
         setupLayout()
@@ -19,7 +19,7 @@ final class ___VARIABLE_NAME___ViewController: UIViewController {
 }
 
 // MARK: - Setup
-private extension ___VARIABLE_NAME___ViewController {
+private extension ___FILEBASENAME___ViewController {
     
     /// viewの初期設定
     func setupView() {
@@ -38,7 +38,7 @@ private extension ___VARIABLE_NAME___ViewController {
 }
 
 // MARK: - Output
-extension TemplateViewController: ___VARIABLE_NAME___ViewOutput {
+extension ___FILEBASENAME___ViewController: ___FILEBASENAME___ViewOutput {
     /// エラー表示を行う
     /// ErrorがAPIError型の場合はエラーメッセージを表示する
     /// - Parameter error: Error
@@ -63,7 +63,7 @@ extension TemplateViewController: ___VARIABLE_NAME___ViewOutput {
 }
 
 // MARK: - Private
-private extension ___VARIABLE_NAME___ViewController {
+private extension ___FILEBASENAME___ViewController {
     
     func buttonAction() {
         showProgress()
