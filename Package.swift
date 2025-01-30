@@ -5,5 +5,18 @@ import PackageDescription
 
 let package = Package(
     name: "XcodeTemplates",
-    platforms: [.iOS(.v15)]
+    platforms: [.iOS(.v15)],
+    products: [
+        .library(
+            name: "XcodeTemplates",
+            targets: ["XcodeTemplates"]
+        )
+    ],
+    targets: [
+        .target(
+            name: "XcodeTemplates",
+            dependencies: []
+        )
+    ]
 )
+
