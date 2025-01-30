@@ -3,15 +3,15 @@
 import UIKit
 import SVProgressHUD
 
-final class ___FILEBASENAME___ViewController: UIViewController {
+final class ___VARIABLE_moduleName___ViewController: UIViewController {
     
-    private let presenter: ___FILEBASENAME___Presenter!
+    private let presenter: ___VARIABLE_moduleName___Presenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        presenter = ___FILEBASENAME___Presenter(view: self,
-                                      service: ___FILEBASENAME___Service())
+        presenter = ___VARIABLE_moduleName___Presenter(view: self,
+                                      service: ___VARIABLE_moduleName___Service())
         
         setupView()
         setupLayout()
