@@ -15,7 +15,9 @@ let package = Package(
     targets: [
         .target(
             name: "XcodeTemplates",
-            dependencies: []
+            resources: [
+                .copy("Templates")
+            ]
         )
     ]
 )
