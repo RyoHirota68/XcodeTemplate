@@ -7,18 +7,14 @@ let package = Package(
     name: "XcodeTemplates",
     platforms: [.iOS(.v15)],
     products: [
-        .library(
-            name: "XcodeTemplates",
-            targets: ["XcodeTemplates"]
-        )
+        .library(name: "XcodeTemplates", targets: ["XcodeTemplates"]),
     ],
     targets: [
         .target(
             name: "XcodeTemplates",
-            resources: [
-                .copy("Templates")
-            ]
+            path: "Sources",
+            exclude: ["Templates"], // 不要なディレクトリを除外
+            resources: [.copy("Templates")] // Xcode のテンプレートをリソースとしてコピー
         )
     ]
 )
-
