@@ -25,23 +25,7 @@
     <array />
     <key>DefaultCompletionName</key>
     <string>File</string>
-
-    <!-- ✅ ユーザー入力用のカスタム変数を追加 -->
-    <key>Options</key>
-    <dict>
-        <key>ModuleName</key>
-        <dict>
-            <key>Identifier</key>
-            <string>moduleName</string>
-            <key>Type</key>
-            <string>text</string>
-            <key>Default</key>
-            <string>MyModule</string>
-        </dict>
-    </dict>
-
     <key>MainTemplateFile</key>
-    <string>___VARIABLE_moduleName___ViewController.swift</string>
-
+    <string>___FILEBASENAME___ViewController.swift</string>
 </dict>
 </plist>
